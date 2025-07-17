@@ -3,6 +3,11 @@ import Logo from '../assets/logo.svg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
+
+
+
+
+
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [open, setOpen] = useState(false);
@@ -39,7 +44,7 @@ const Header = () => {
                     ))}
                 </div>
 
-                
+
                 <button
                     onClick={() => setOpen(!open)}
                     className="text-white text-3xl focus:outline-none  lg:hidden flex"

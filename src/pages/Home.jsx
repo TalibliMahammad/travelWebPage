@@ -1,7 +1,8 @@
 import React from 'react'
 import homeImage from '../assets/hero.jpg'
-import Header from '../components/header'
+
 import { CiPlay1 } from "react-icons/ci";
+import Header from '../components/Header';
 
 const Home = () => {
 

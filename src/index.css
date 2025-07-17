@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 2;
+    transform: translateY(-100);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px); /* soldan sağa */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px); /* sağdan sola */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+
+  @keyframes bounceInRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate( -5deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.bounce-in-rotate {
+  animation: bounceInRotate 0.8s ease-out forwards;
+}
